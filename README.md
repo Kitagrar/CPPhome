@@ -11,4 +11,4 @@ Gide for repository:    HW_i is a directory for current homework
 
 >Actually, there is no usefull information for you, I just were interested in Markdown, so don't blame me and get upset
 
-![Here is you'r new friend](images/Tux.png) 
+![Here is you'r new friend](images/1.gif) 
