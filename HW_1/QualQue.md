@@ -6,8 +6,10 @@
 --support for high-level and low-level capabilities  
 
 ## Quest 2 (fundamental data types)
---bool: takes 1 byte, not a bit  a variable of this type can have the values true and false   
---char: 1 byte — 256 symbols  the types char, wchar_t, char8_t, char16_t, and char32_t are built—in types representing alphanumeric characters, non-alphanumeric glyphs, and non-printable characters.
+--bool: takes 1 byte, not a bit  
+a variable of this type can have the values true and false   
+--char: 1 byte — 256 symbols  
+the types char, wchar_t, char8_t, char16_t, and char32_t are built—in types representing alphanumeric characters, non-alphanumeric glyphs, and non-printable characters.
 --int: 4 byte(short — 2 byte; long — 4 byte; long long — 8 byte), default selection for integer values  
 --signed/unsigned: default option for bit flags  
 --size_t: designed to display the size of any object in bytes: this returns size_of and many standard library functions  
@@ -92,6 +94,6 @@ compound assignment, in which an arithmetic, shift, or bitwise operation is perf
          << "c >>= 1 yields " << c << std::endl
          << "d |= e yields " << std::hex << d << std::endl;
     }  
-## Quest 5()
+## Quest 5(alignment)
 >Alignment helps the processor extract data from memory efficiently: fewer cache misses/flushes, fewer bus transactions, etc.  
 Some types of memory (for example, RDRAM, DRAM, etc.) need to be accessed in a structured way (aligned "words" and in "batch transactions", i.e. many words at the same time) to obtain effective results.
