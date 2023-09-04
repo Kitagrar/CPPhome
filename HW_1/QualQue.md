@@ -6,16 +6,16 @@
 --support for high-level and low-level capabilities  
 
 ## Quest 2 (fundamental data types)
---bool: takes 1 byte, not a bit  
+--**bool**: takes 1 byte, not a bit  
 a variable of this type can have the values true and false   
---char: 1 byte — 256 symbols  
-the types char, wchar_t, char8_t, char16_t, and char32_t are built—in types representing alphanumeric characters, non-alphanumeric glyphs, and non-printable characters.
---int: 4 byte(short — 2 byte; long — 4 byte; long long — 8 byte), default selection for integer values  
---signed/unsigned: default option for bit flags  
---size_t: designed to display the size of any object in bytes: this returns size_of and many standard library functions  
---float: 4 byte variables with a floating point that contains the value of a number, and an exponent that contains the ascending order of the number  
---double:  8 byte variables with a floating point that contains the value of a number, and an exponent that contains the ascending order of the number (more accurate than float)  
---void: it is mainly used to declare functions that do not return values, or to declare universal pointers to untyped or arbitrarily typed data  any expression can be explicitly converted or cast to the void type  
+--**char**: 1 byte — 256 symbols  
+the types char, wchar_t, char8_t, char16_t, and char32_t are built—in types representing alphanumeric characters, non-alphanumeric glyphs, and non-printable characters.  
+--**int**: 4 byte(short — 2 byte; long — 4 byte; long long — 8 byte), default selection for integer values  
+--**signed/unsigned**: default option for bit flags  
+--**size_t**: designed to display the size of any object in bytes: this returns size_of and many standard library functions  
+--**float**: 4 byte variables with a floating point that contains the value of a number, and an exponent that contains the ascending order of the number  
+--**double**:  8 byte variables with a floating point that contains the value of a number, and an exponent that contains the ascending order of the number (more accurate than float)  
+--**void**: it is mainly used to declare functions that do not return values, or to declare universal pointers to untyped or arbitrarily typed data  any expression can be explicitly converted or cast to the void type  
 
 ## Quest 3 (the problem of portability)
 The actual code obtained depends on the specifics of the implementation of a particular computer and the type of processor used. A program written in a specific programming language requires a specific compiler to convert to machine code for a given processor.
