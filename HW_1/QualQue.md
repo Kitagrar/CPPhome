@@ -47,4 +47,47 @@ The actual code obtained depends on the specifics of the implementation of a par
 
     namespace N {
     class C{/*...*/};
-    }
+    }  
+    
+--definition: the definition provides the compiler with all the information necessary to create machine code when the entity is subsequently used in the program  
+    // Declare and define int variables i and j.
+    int i;
+    int j = 10;
+
+    // Declare enumeration suits.
+    enum suits { Spades = 1, Clubs, Hearts, Diamonds };
+
+    // Declare class CheckBox.
+    class CheckBox : public Control
+    {
+    public:
+        Boolean IsChecked();
+        virtual int     ChangeState() = 0;
+    };  
+--initialization: the initializer determines the initial value of the variable.  
+    int i = 3;
+    Point p1{ 1, 2 };  
+--assignment: a simple assignment in which the value of the second operand is stored in the object specified by the first operand  
+compound assignment, in which an arithmetic, shift, or bitwise operation is performed before saving the result  
+    // expre_Assignment_Operators.cpp
+    // compile with: /EHsc
+    // Demonstrate assignment operators
+    #include <iostream>
+
+    int main() {
+    int a = 3, b = 6, c = 10, d = 0xAAAA, e = 0x5555;
+
+    a += b;      // a is 9
+    b %= a;      // b is 6
+    c >>= 1;      // c is 5
+    d |= e;      // Bitwise--d is 0xFFFF
+
+    std::cout  << "a = 3, b = 6, c = 10, d = 0xAAAA, e = 0x5555" << std::endl
+         << "a += b yields " << a << std::endl
+         << "b %= a yields " << b << std::endl
+         << "c >>= 1 yields " << c << std::endl
+         << "d |= e yields " << std::hex << d << std::endl;
+    }  
+## Quest 5()
+>Alignment helps the processor extract data from memory efficiently: fewer cache misses/flushes, fewer bus transactions, etc.  
+Some types of memory (for example, RDRAM, DRAM, etc.) need to be accessed in a structured way (aligned "words" and in "batch transactions", i.e. many words at the same time) to obtain effective results.
