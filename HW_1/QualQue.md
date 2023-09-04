@@ -25,7 +25,8 @@ The actual code obtained depends on the specifics of the implementation of a par
 --One way to increase the portability of the program is to make the parameters independent of the system or processor by using the #define macro. This will make the parameters independent of the operating system or processor  
 
 ## Quest 4 (declaration, initialization, definition and assignment)
---declaration: The declaration specifies the unique name of the entity, as well as information about its type and other characteristics  
+--declaration: The declaration specifies the unique name of the entity, as well as information about its type and other characteristics    
+
     #include <string>
 
     int f(int i); // forward declaration
@@ -49,7 +50,8 @@ The actual code obtained depends on the specifics of the implementation of a par
     class C{/*...*/};
     }  
     
---definition: the definition provides the compiler with all the information necessary to create machine code when the entity is subsequently used in the program  
+--definition: the definition provides the compiler with all the information necessary to create machine code when the entity is subsequently used in the program    
+
     // Declare and define int variables i and j.
     int i;
     int j = 10;
@@ -65,10 +67,12 @@ The actual code obtained depends on the specifics of the implementation of a par
         virtual int     ChangeState() = 0;
     };  
 --initialization: the initializer determines the initial value of the variable.  
+
     int i = 3;
     Point p1{ 1, 2 };  
 --assignment: a simple assignment in which the value of the second operand is stored in the object specified by the first operand  
 compound assignment, in which an arithmetic, shift, or bitwise operation is performed before saving the result  
+
     // expre_Assignment_Operators.cpp
     // compile with: /EHsc
     // Demonstrate assignment operators
