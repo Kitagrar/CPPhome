@@ -1,19 +1,23 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 int main() {
-  int a, b, c;
-  double dis;
+  int a = 0, b = 0, c = 0;
+  int dis = 0;
 
   std::cin >> a >> b >> c;
 
-  dis = sqrt(pow(b, 2) - 4 * c * a);
+  dis = b * b - 4 * c * a;
+  
+  if (a == 0){
+      std::cout << -double(c) / b;
+  }
 
-  if (dis > 0) {
-    std::cout << (-float(b) + sqrt(dis)) / 2 * a
-              << (-float(b) - sqrt(dis)) / 2 * a;
+  else if (dis > 0) {
+    std::cout << (-double(b) + sqrt(dis)) / 2 * a << " "
+              << (-double(b) - sqrt(dis)) / 2 * a;
   } else if (dis == 0) {
-    std::cout << -float(b) / 2 * a;
+    std::cout << -double(b) / 2 * a;
   } else {
     std::cout << "Корней нет";
   }
