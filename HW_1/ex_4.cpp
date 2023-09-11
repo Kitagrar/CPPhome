@@ -2,8 +2,20 @@
 
 int main() {
 
-  int x, y;
-  std::cin >> x >> y;
+  int x = 0, y = 0;
+  while (true) {
+
+    std::cout << "Print x, y: ";
+    std::cin >> x >> y;
+    if (std::cin.fail()) {
+      std::cin.clear();
+      std::cin.ignore(32767, '\n');
+      std::cout << "Oops, that input is invalid. Please try again.\n";
+
+    } else {
+      break;
+    }
+  }
 
   x = x + y;
   y = x - y;
